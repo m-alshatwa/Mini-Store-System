@@ -1,8 +1,4 @@
-public class Clothing {
-    int productId;
-    String name;
-    double price;
-    int stockQuantity;
+public class Clothing extends Product{
     String size;
     String fabricType;
 

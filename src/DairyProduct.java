@@ -1,9 +1,4 @@
-public class DairyProduct {
-    int productId;
-    String name;
-    double price;
-    int stockQuantity;
-    double weightInKilos;
+public class DairyProduct extends Grocery{
     String expirationDate;
     boolean requiresRefrigeration;
 

@@ -1,9 +1,4 @@
-public class Smartphone {
-    int productId;
-    String name;
-    double price;
-    int stockQuantity;
-    int warrantyMonths;
+public class Smartphone extends Electronics{
     String operatingSystem;
     int storageCapacity;
 
@@ -17,7 +12,4 @@ public class Smartphone {
         this.storageCapacity = storageCapacity;
     }
 
-    void applyDiscount(double percentage){
-        price -= price * (percentage/100);
-    }
 }

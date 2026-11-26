@@ -1,8 +1,4 @@
-public class Electronics {
-    int productId;
-    String name;
-    double price;
-    int stockQuantity;
+public class Electronics extends Product{
     int warrantyMonths;
 
     public Electronics(int productId, String name, double price, int stockQuantity, int warrantyMonths){

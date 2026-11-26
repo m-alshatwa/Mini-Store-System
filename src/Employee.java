@@ -1,6 +1,4 @@
-public class Employee {
-    int id;
-    String name;
+public class Employee extends User{
     double salary;
     private static int nextId = 2000;
 

@@ -1,6 +1,4 @@
-public class BusinessCustomerRepresentative {
-    int id;
-    String name;
+public class BusinessCustomerRepresentative extends User{
     String companyName;
     String taxId;
     double creditLimit;

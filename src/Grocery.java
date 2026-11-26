@@ -1,8 +1,4 @@
-public class Grocery {
-    int productId;
-    String name;
-    double price;
-    int stockQuantity;
+public class Grocery extends Product{
     double weightInKilos;
 
     public Grocery(int productId, String name, double price, int stockQuantity, double weightInKilos){
@@ -11,6 +7,10 @@ public class Grocery {
         this.price = price;
         this.stockQuantity =stockQuantity;
         this.weightInKilos = weightInKilos;
+    }
+
+    public Grocery(){
+        this(0, "unknown", 0, 0, 0);
     }
 
     void saleByWeight(double weightInKilos){

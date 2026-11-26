@@ -1,6 +1,4 @@
-public class Customer {
-    int id;
-    String name;
+public class Customer extends User{
     double walletBalance;
     private static int nextId = 1000;
 
