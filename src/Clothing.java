@@ -2,13 +2,17 @@ public class Clothing extends Product{
     private String size;
     private String fabricType;
 
-    public Clothing(int productId, String name, double price, int stockQuantity, String size, String fabricType){
-        super(productId, name, price, stockQuantity);
+    public Clothing(String name, double price, int stockQuantity, String size, String fabricType){
+        super(name, price, stockQuantity);
         this.size = size;
         this.fabricType = fabricType;
     }
 
-    boolean isSizeAvailabel(String size){
+    public String getSize() {
+        return size;
+    }
+
+    boolean isSizeAvailable(String size){
         return this.size.equals(size);
     }
 }

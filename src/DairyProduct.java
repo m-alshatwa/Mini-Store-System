@@ -2,13 +2,17 @@ public class DairyProduct extends Grocery{
     private String expirationDate;
     private boolean requiresRefrigeration;
 
-    public DairyProduct(int productId, String name, double price, int stockQuantity, double weightInKilos, String expirationDate, boolean requiresRefrigeration){
-        super(productId, name, price, stockQuantity, weightInKilos);
+    public DairyProduct(String name, double price, int stockQuantity, double weightInKilos, String expirationDate, boolean requiresRefrigeration){
+        super(name, price, stockQuantity, weightInKilos);
         this.expirationDate = expirationDate;
         this.requiresRefrigeration = requiresRefrigeration;
     }
 
-    void needRefrigeration(){
+    public String getExpirationDate() {
+        return expirationDate;
+    }
+
+    void checkRefrigeration(){
         if(requiresRefrigeration){
             System.out.println("need refrigeration");
         }

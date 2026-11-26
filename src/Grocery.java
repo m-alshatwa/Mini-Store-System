@@ -1,18 +1,16 @@
 public class Grocery extends Product{
     private double weightInKilos;
 
-    public Grocery(int productId, String name, double price, int stockQuantity, double weightInKilos){
-        super(productId, name, price, stockQuantity);
+    public Grocery(String name, double price, int stockQuantity, double weightInKilos){
+        super(name, price, stockQuantity);
         this.weightInKilos = weightInKilos;
     }
 
     public Grocery(){
-        this(0, "unknown", 0, 0, 0);
+        this("unknown", 0, 0, 0);
     }
 
-    void saleByWeight(double weightInKilos){
-        if(weightInKilos <= this.weightInKilos){
-            this.weightInKilos -= weightInKilos;
-        }
+    public double getWeightInKilos() {
+        return weightInKilos;
     }
 }
