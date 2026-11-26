@@ -1,11 +1,8 @@
 public class Grocery extends Product{
-    double weightInKilos;
+    private double weightInKilos;
 
     public Grocery(int productId, String name, double price, int stockQuantity, double weightInKilos){
-        this.productId = productId;
-        this.name = name;
-        this.price = price;
-        this.stockQuantity =stockQuantity;
+        super(productId, name, price, stockQuantity);
         this.weightInKilos = weightInKilos;
     }
 

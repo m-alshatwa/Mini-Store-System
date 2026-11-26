@@ -1,13 +1,9 @@
 public class Smartphone extends Electronics{
-    String operatingSystem;
-    int storageCapacity;
+    private String operatingSystem;
+    private int storageCapacity;
 
     public Smartphone(int productId, String name, double price, int stockQuantity, int warrantyMonths, String operatingSystem, int storageCapacity){
-        this.productId = productId;
-        this.name = name;
-        this.price = price;
-        this.stockQuantity =stockQuantity;
-        this.warrantyMonths = warrantyMonths;
+        super(productId, name, price, stockQuantity, warrantyMonths);
         this.operatingSystem = operatingSystem;
         this.storageCapacity = storageCapacity;
     }

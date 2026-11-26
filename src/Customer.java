@@ -1,5 +1,5 @@
 public class Customer extends User{
-    double walletBalance;
+    private double walletBalance;
     private static int nextId = 1000;
 
     Electronics elc[] = new Electronics[5];
@@ -9,8 +9,7 @@ public class Customer extends User{
 
 
     public Customer(String name, double walletBalance){
-        this.id = nextId++;
-        this.name = name;
+        super(nextId++,name);
         this.walletBalance = walletBalance;
     }
     public Customer(){
@@ -43,7 +42,7 @@ public class Customer extends User{
             System.out.println("    (Empty)");
         } else {
             for (int i = 0; i < elcCounter; i++) {
-                System.out.println("    " + elc[i].name + " (" + elc[i].price + " SAR)");
+                System.out.println("    " + elc[i].getName() + " (" + elc[i].getPrice() + " SAR)");
             }
         }
 
@@ -52,8 +51,12 @@ public class Customer extends User{
             System.out.println("    (Empty)");
         } else {
             for (int i = 0; i < cloCounter; i++) {
-                System.out.println("    " + clot[i].name + " (" + clot[i].price + " SAR)");
+                System.out.println("    " + clot[i].getName() + " (" + clot[i].getPrice() + " SAR)");
             }
         }
+    }
+
+    public double getWalletBalance() {
+        return walletBalance;
     }
 }

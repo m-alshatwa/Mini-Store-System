@@ -1,12 +1,9 @@
 public class Clothing extends Product{
-    String size;
-    String fabricType;
+    private String size;
+    private String fabricType;
 
     public Clothing(int productId, String name, double price, int stockQuantity, String size, String fabricType){
-        this.productId = productId;
-        this.name = name;
-        this.price = price;
-        this.stockQuantity =stockQuantity;
+        super(productId, name, price, stockQuantity);
         this.size = size;
         this.fabricType = fabricType;
     }

@@ -1,10 +1,9 @@
 public class Employee extends User{
-    double salary;
+    private double salary;
     private static int nextId = 2000;
 
     public Employee(String name, double salary){
-        this.id = nextId++;
-        this.name = name;
+        super(nextId++, name);
         this.salary = salary;
     }
 

@@ -13,7 +13,7 @@ public class StoreTest {
 
         System.out.println("--- CUSTOMER ROSTER & CARTS ---");
         for (int i = 0; i < cts.length; i++){
-            System.out.println("Customer: " + cts[i].name + " (ID: " + cts[i].id + ") | Balance: " + cts[i].walletBalance +" SAR");
+            System.out.println("Customer: " + cts[i].getName() + " (ID: " + cts[i].getId() + ") | Balance: " + cts[i].getWalletBalance() +" SAR");
             cts[i].printCarts();
         }
 

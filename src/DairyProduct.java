@@ -1,13 +1,9 @@
 public class DairyProduct extends Grocery{
-    String expirationDate;
-    boolean requiresRefrigeration;
+    private String expirationDate;
+    private boolean requiresRefrigeration;
 
     public DairyProduct(int productId, String name, double price, int stockQuantity, double weightInKilos, String expirationDate, boolean requiresRefrigeration){
-        this.productId = productId;
-        this.name = name;
-        this.price = price;
-        this.stockQuantity =stockQuantity;
-        this.weightInKilos = weightInKilos;
+        super(productId, name, price, stockQuantity, weightInKilos);
         this.expirationDate = expirationDate;
         this.requiresRefrigeration = requiresRefrigeration;
     }

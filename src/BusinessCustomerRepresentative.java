@@ -1,12 +1,11 @@
 public class BusinessCustomerRepresentative extends User{
-    String companyName;
-    String taxId;
-    double creditLimit;
+    private String companyName;
+    private String taxId;
+    private double creditLimit;
     private static int nextId = 5000;
 
     public BusinessCustomerRepresentative(String name, String companyName, String taxId, double creditLimit){
-        this.id = nextId++;
-        this.name = name;
+        super(nextId++, name);
         this.companyName = companyName;
         this.taxId = taxId;
         this.creditLimit = creditLimit;
